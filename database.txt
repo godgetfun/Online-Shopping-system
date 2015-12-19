@@ -1,0 +1,24 @@
+create table register(username varchar(20) , email_address varchar(20) , address varchar(20) , contact_no varchar(20), password varchar(20) , confirm_password varchar(20) , PRIMARY KEY (username)) 
+
+create table login(username char(20),passwd char(20),primary key (username));
+
+create table mobile(product_id varchar(20) , product_name varchar(20),unit_price integer,primary key (product_id))
+insert into mobile values('001','NINJA3',5999)
+insert into mobile values('002','IDEA',6999)
+insert into mobile values('003','SAMSUNG GALAXY',7999)
+
+create table computer(product_id varchar(20) , product_name varchar(20),unit_price integer,primary key (product_id))
+INSERT INTO COMPUTER VALUES('004','acer aspire 5755g',45000)
+INSERT INTO COMPUTER VALUES('005','dell inspiron 15x',39000)
+INSERT INTO COMPUTER VALUES('006','hp laptop',41000)
+
+
+
+create table book(product_id varchar(20) , book_name varchar(20),author_name varchar(20),unit_price integer,primary key (product_id))
+INSERT INTO BOOK VALUES('007','algorithms','cormen',499)
+INSERT INTO BOOK VALUES('008','comp. architecture','morris mano',349)
+INSERT INTO BOOK VALUES('009','operating system','galvin',399)
+
+
+create table orderdetail(username varchar(100),order_id varchar(100),product_name varchar(100),dat varchar(100),price integer)
+

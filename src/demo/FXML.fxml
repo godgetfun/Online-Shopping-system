@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" minWidth="500.0" prefHeight="500.0" prefWidth="500.0"  styleClass="background" xmlns:fx="http://javafx.com/fxml" fx:controller="demo.CartController">
+  <children>
+    <AnchorPane id="anchorPane2" prefHeight="300.0" prefWidth="500.0" styleClass="top-segment" AnchorPane.bottomAnchor="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <VBox id="VBox" alignment="CENTER" prefHeight="300.0" prefWidth="421.0" spacing="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="29.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="0.0">
+          <children>
+            <AnchorPane id="AnchorPane" prefHeight="180.0" prefWidth="430.0">
+                 <Hyperlink fx:id="logout" onAction="#processLogout" text="logout" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="0" AnchorPane.topAnchor="0.0" AnchorPane.rightAnchor="20" />
+            <Button id="button1" fx:id="categories" defaultButton="true" onAction="#catselect" prefHeight="100.0" prefWidth="250.0" text="Categories >" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="20" />
+            </AnchorPane>
+          </children>
+        </VBox>
+      </children>
+    </AnchorPane>
+ 
+    <HBox id="hBox1" alignment="CENTER" prefHeight="25.0" prefWidth="418.0" AnchorPane.bottomAnchor="156.0" AnchorPane.leftAnchor="41.0" AnchorPane.rightAnchor="41.0">
+    </HBox>
+  </children>
+  <stylesheets>
+    <URL value="@Login.css" />
+  </stylesheets>
+</AnchorPane>
